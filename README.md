@@ -147,10 +147,14 @@ Please change the dataset path there to your local actual path before running in
 If you find this repository helpful for your research or work, please cite our paper:
 
 ```
-@article{fang202Xlgmm,
-  title   = {LGMM-Net: A Local-Global Encoder and Mask Mamba Decoder Network for Remote Sensing Change Detection},
-  author  = {Fang, Chen and Cheng, Shuli and Du, Anyu and Wu, Chunpeng and Ding, Yao},
-  journal = {TODO},
-  year    = {202X}
-}
+@ARTICLE{lgmm,
+  author={Fang, Chen and Cheng, Shuli and Du, Anyu and Wu, Chunpeng and Ding, Yao},
+  journal={IEEE Transactions on Geoscience and Remote Sensing}, 
+  title={LGMM-Net: A Local-Global Encoder and Mask Mamba Decoder Network for Remote Sensing Change Detection}, 
+  year={2026},
+  volume={},
+  number={},
+  pages={1-1},
+  keywords={Change detection (CD);Transformer;State Space Model (SSM);Mamba;remote sensing (RS)},
+  doi={10.1109/TGRS.2026.3662322}}
 ```
