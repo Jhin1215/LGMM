@@ -80,7 +80,7 @@ basename -a train/A/*.png > train/list/train.txt
 由于预训练权重（`checkpoint`）文件夹体积较大，无法直接上传至仓库，现提供以下获取方式（以 **LEVIR-CD** 为例）：
 
 百度网盘下载：https://pan.baidu.com/s/1PqD-svLTwYy0yWqg-dJH-Q?pwd=gx84
-提取码: gx84。如网盘链接失效可通过邮箱联系获取：`2812957539@qq.com`
+提取码: gx84。
 
 下载后请**直接将整个 `checkpoint/` 文件夹**放到以下目录中（保持文件结构不变）：
 
