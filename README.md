@@ -85,7 +85,7 @@ repository. Therefore, the following access method is provided (taking **LEVIR-C
 Baidu Netdisk download:  
 https://pan.baidu.com/s/1PqD-svLTwYy0yWqg-dJH-Q?pwd=gx84  
 Extraction code: gx84.  
-If the link becomes invalid, you may contact us via email: `2812957539@qq.com`.
+If the link becomes invalid, please leave a comment in the Issues section, and I will share an updated link.
 
 After downloading, please **directly place the entire `checkpoint/` folder** into the following directory (keeping the
 folder structure unchanged):
