@@ -6,8 +6,6 @@ bin-release/
 
 *.pth
 samples
-*.png
-*.jpg
 *.tiff
 *.tif
 # Other files and folders
