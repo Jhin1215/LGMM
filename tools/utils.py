@@ -309,3 +309,17 @@ def test_fps(model, dual_input=False, device='cuda',
       fps = 1000.0 / avg_ms
       print(f"[{H}x{W}, dual={dual_input}] {avg_ms:.2f} ms | {fps:.2f} FPS (FP16={use_amp and device=='cuda'}, ch_last={use_channels_last})")
     return fps, avg_ms
+
+
+def judge_is_exist(epoch, val_f1, val_loss, best_f1, best_loss, dataset_name):
+    """Return whether the current validation result should be saved as best."""
+    if epoch >= 270:
+        return val_f1 >= best_f1
+    if val_f1 >= best_f1:
+        return True
+
+    # Allow a small F1 decrease when the validation loss does not worsen materially.
+    f1_threshold = round(best_f1 * 0.999, 6)
+    loss_threshold = round(best_loss * 1.01, 6)
+    return (val_f1 >= f1_threshold and
+            (val_loss <= loss_threshold or dataset_name == 'SYSU'))
